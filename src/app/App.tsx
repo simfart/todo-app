@@ -45,15 +45,18 @@ export const App: FC = () => {
 
   return (
     <div className={styles.app}>
-      <h1 className={styles.title}>todos</h1>
-      <div className={styles.newTask}>
-        <input
-          type="text"
-          placeholder="New Task..."
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
-        />
-        <button onClick={addTodo}>Add</button>
+      <div className={styles.header}>
+        {" "}
+        <h1 className={styles.title}>todos</h1>
+        <div className={styles.newTask}>
+          <input
+            type="text"
+            placeholder="New Task..."
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+          />
+          <button onClick={addTodo}>Add</button>
+        </div>
       </div>
 
       <ul className={styles.todoList}>
