@@ -1,0 +1,67 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.newTask {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  font-size: 14px;
+  color: #555;
+  margin-right: 30px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+  font-size: 14px;
+  &:hover {
+    border-color: #ccc;
+  }
+  &:focus {
+    outline: none;
+  }
+}
